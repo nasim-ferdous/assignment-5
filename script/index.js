@@ -2,7 +2,7 @@ function getElement(id) {
   const element = document.getElementById(id);
   return element;
 }
-
+// the card section
 document
   .getElementById("all-cards")
   .addEventListener("click", function (event) {
@@ -29,6 +29,7 @@ document
       const serviceName = heartIcon.parentNode.parentNode.children[2].innerText;
       const serviceNumber =
         heartIcon.parentNode.parentNode.children[3].innerText;
+
       alert("Calling" + " " + serviceName + " " + serviceNumber + "...");
 
       //   coin count
@@ -56,3 +57,10 @@ document
       callContainer.appendChild(callHistory);
     }
   });
+
+//   clear button
+document.getElementById("clear-button").addEventListener("click", function () {
+  const callContainer = getElement("call-container");
+  callContainer.innerText = "";
+  console.log(callContainer);
+});
