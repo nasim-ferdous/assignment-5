@@ -22,6 +22,10 @@ document
       }
       // alert
       const heartIcon = event.target;
+      const serviceTitle =
+        heartIcon.parentNode.parentNode.children[1].innerText;
+      console.log(serviceTitle);
+
       const serviceName = heartIcon.parentNode.parentNode.children[2].innerText;
       const serviceNumber =
         heartIcon.parentNode.parentNode.children[3].innerText;
@@ -32,5 +36,23 @@ document
       const currentCoin = Number(coinCount) - 20;
       getElement("coin-count").innerText = currentCoin;
       console.log(currentCoin);
+
+      //   call history
+      const time = new Date().toLocaleTimeString();
+
+      const callContainer = getElement("call-container");
+      const callHistory = document.createElement("div");
+      callHistory.innerHTML = `
+            <div
+                class="bg-gray-100 flex justify-between items-center rounded-lg p-4"
+              >
+                <div>
+                  <h1 class="text[#111111]">${serviceTitle}</h1>
+                  <p>${serviceNumber}</p>
+                </div>
+                <p>${time}</p>
+              </div>
+      `;
+      callContainer.appendChild(callHistory);
     }
   });
