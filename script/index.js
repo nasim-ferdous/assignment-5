@@ -60,7 +60,9 @@ document
       // copy count
       const copyButton = event.target;
       const copyNumber = copyButton.parentNode.parentNode.children[3].innerText;
+      navigator.clipboard.writeText(copyNumber);
       alert("নম্বর কপি হয়েছেঃ" + " " + copyNumber);
+
       const copyCount = getElement("copy-count").innerText;
       const currentCopyCount = Number(copyCount) + 1;
       getElement("copy-count").innerText = currentCopyCount;
