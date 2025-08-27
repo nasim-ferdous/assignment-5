@@ -11,7 +11,6 @@ document
       const heartCount = getElement("heart-count").innerText;
       const currentHeartCount = Number(heartCount) + 1;
       getElement("heart-count").innerText = currentHeartCount;
-      console.log(currentHeartCount);
     }
     // call button
     if (event.target.className.includes("call-btn")) {
@@ -55,6 +54,17 @@ document
               </div>
       `;
       callContainer.appendChild(callHistory);
+    }
+    // copy button
+    if (event.target.className.includes("copy-btn")) {
+      // copy count
+      const copyButton = event.target;
+      const copyNumber = copyButton.parentNode.parentNode.children[3].innerText;
+      alert("নম্বর কপি হয়েছেঃ" + " " + copyNumber);
+      const copyCount = getElement("copy-count").innerText;
+      const currentCopyCount = Number(copyCount) + 1;
+      getElement("copy-count").innerText = currentCopyCount;
+      console.log(currentCopyCount);
     }
   });
 
