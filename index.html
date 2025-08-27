@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment-5</title>
+    <!-- tailwind cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- daisy ui -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+  <body>
+    <nav class="w-11/12 mx-auto flex justify-between">
+      <div class="nav-left flex items-center">
+        <img src="./assets/logo.png" alt="" class="w-10" />
+        <h2 class="text-[#006747] font-bold ml-2">Emergency<br />Service</h2>
+      </div>
+      <div class="nav-right flex gap-3 p-3">
+        <div
+          class="bg-[#41ff6b1a] flex justify-center items-center gap-2 w-16 rounded-3xl"
+        >
+          <p>0</p>
+          <img src="./assets/heart.png" alt="" class="w-5 h-5" />
+        </div>
+        <div
+          class="bg-[#41ff6b1a] flex justify-center gap-2 items-center w-16 rounded-3xl"
+        >
+          <p>100</p>
+          <img src="./assets/coin.png" alt="" class="w-5 h-5" />
+        </div>
+        <div class="bg-[#00A63E] w-16 rounded-3xl text-white">
+          <p class="text-center">0 Copy</p>
+        </div>
+      </div>
+    </nav>
+    <main class="bg-[#f5fff6]">
+      <section
+        class="banner h-[230px] bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] flex items-center"
+      >
+        <div class="flex flex-col gap-2 items-center">
+          <img src="./assets/logo-dark.png" alt="" class="w-14" />
+          <h1 class="text-white">জরুরি সেবা ডিরেক্টরি</h1>
+          <p class="text-white text-sm ml-8">
+            Government Emergency Services at Your Fingertip – A Project by
+            Government of the People’s Republic of Bangladesh
+          </p>
+        </div>
+      </section>
+
+      <section class="card-history w-11/12 mx-auto mt-5">
+        <div class="grid grid-cols-12 gap-3">
+          <div class="bg-green-500 col-span-9">
+            <div class="card card-border bg-base-100">
+              <div class="card-body">
+                <h2 class="card-title">Card Title</h2>
+                <p>
+                  A card component has a figure, a body part, and inside body
+                  there are title and actions parts
+                </p>
+                <div class="card-actions justify-end">
+                  <button class="btn btn-primary">Buy Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bg-blue-500 col-span-3">
+            <h1>right</h1>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
