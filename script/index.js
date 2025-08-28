@@ -57,12 +57,12 @@ document
     }
     // copy button
     if (event.target.className.includes("copy-btn")) {
-      // copy count
+      // copy to paste and alert
       const copyButton = event.target;
       const copyNumber = copyButton.parentNode.parentNode.children[3].innerText;
       navigator.clipboard.writeText(copyNumber);
       alert("নম্বর কপি হয়েছেঃ" + " " + copyNumber);
-
+      // copy count
       const copyCount = getElement("copy-count").innerText;
       const currentCopyCount = Number(copyCount) + 1;
       getElement("copy-count").innerText = currentCopyCount;

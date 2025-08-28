@@ -17,26 +17,33 @@
   </head>
   <body>
     <!-- navbar -->
-    <nav class="w-11/12 mx-auto flex justify-between">
+    <nav
+      class="w-11/12 mx-auto flex flex-col items-center md:flex-row md:justify-between"
+    >
       <div class="nav-left flex items-center">
-        <img src="./assets/logo.png" alt="" class="w-10" />
-        <h2 class="text-[#006747] font-bold ml-2">Emergency<br />Service</h2>
+        <img src="./assets/logo.png" alt="" class="w-12" />
+        <h2 class="text-[#006747] font-bold ml-2">
+          Emergency<br />
+          Service
+        </h2>
       </div>
       <div class="nav-right flex gap-3 p-3">
         <div
-          class="bg-[#41ff6b1a] flex justify-center items-center gap-2 w-16 rounded-3xl"
+          class="bg-[#41ff6b1a] flex justify-center items-center gap-2 px-5 py-2 rounded-3xl"
         >
           <p id="heart-count">0</p>
           <img src="./assets/heart.png" alt="" class="w-5 h-5" />
         </div>
         <div
-          class="bg-[#41ff6b1a] flex justify-center gap-2 items-center w-16 rounded-3xl"
+          class="bg-[#41ff6b1a] flex justify-center gap-2 items-center px-5 py-2 rounded-3xl"
         >
           <p id="coin-count">100</p>
           <img src="./assets/coin.png" alt="" class="w-5 h-5" />
         </div>
-        <div class="bg-[#00A63E] w-16 rounded-3xl text-white">
-          <p class="text-center"><span id="copy-count">0</span> Copy</p>
+        <div
+          class="bg-[#00A63E] px-5 py-2 flex items-center justify-center rounded-3xl text-white"
+        >
+          <p class="text-sm"><span id="copy-count">0</span> Copy</p>
         </div>
       </div>
     </nav>
@@ -48,7 +55,7 @@
         <div class="flex flex-col gap-2 items-center">
           <img src="./assets/logo-dark.png" alt="" class="w-14" />
           <h1 class="text-white">জরুরি সেবা ডিরেক্টরি</h1>
-          <p class="text-white text-sm">
+          <p class="text-white text-sm text-center md:text-xl">
             Government Emergency Services at Your Fingertip – A Project by
             Government of the People’s Republic of Bangladesh
           </p>
@@ -60,10 +67,12 @@
           <!-- all card section -->
           <div
             id="all-cards"
-            class="col-span-9 grid grid-cols-1 md:grid-cols-3 gap-2"
+            class="col-span-9 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2"
           >
             <!-- card-1 -->
-            <div class="rounded-xl p-5 shadow-lg bg-white">
+            <div
+              class="rounded-xl p-5 shadow-lg bg-white hover:border-1 hover:border-zinc-500"
+            >
               <div class="flex justify-between items-center">
                 <div
                   class="bg-pink-300 w-8 h-8 rounded-lg flex justify-center items-center"
@@ -92,7 +101,9 @@
               </div>
             </div>
             <!-- card-2 -->
-            <div class="rounded-xl p-5 shadow-lg bg-white">
+            <div
+              class="rounded-xl p-5 shadow-lg bg-white hover:border-1 hover:border-zinc-500"
+            >
               <div class="flex justify-between items-center">
                 <div
                   class="bg-blue-300 w-8 h-8 rounded-lg flex justify-center items-center"
@@ -121,7 +132,9 @@
               </div>
             </div>
             <!-- card-3 -->
-            <div class="rounded-xl p-5 shadow-lg bg-white">
+            <div
+              class="rounded-xl p-5 shadow-lg bg-white hover:border-1 hover:border-zinc-500"
+            >
               <div class="flex justify-between items-center">
                 <div
                   class="bg-pink-300 w-8 h-8 rounded-lg flex justify-center items-center"
@@ -150,7 +163,9 @@
               </div>
             </div>
             <!-- card-4 -->
-            <div class="rounded-xl p-5 shadow-lg bg-white">
+            <div
+              class="rounded-xl p-5 shadow-lg bg-white hover:border-1 hover:border-zinc-500"
+            >
               <div class="flex justify-between items-center">
                 <div
                   class="bg-pink-300 w-8 h-8 rounded-lg flex justify-center items-center"
@@ -179,7 +194,9 @@
               </div>
             </div>
             <!-- card-5 -->
-            <div class="rounded-xl p-5 shadow-lg bg-white">
+            <div
+              class="rounded-xl p-5 shadow-lg bg-white hover:border-1 hover:border-zinc-500"
+            >
               <div class="flex justify-between items-center">
                 <div
                   class="bg-pink-300 w-8 h-8 rounded-lg flex justify-center items-center"
@@ -208,7 +225,9 @@
               </div>
             </div>
             <!-- card-6 -->
-            <div class="rounded-xl p-5 shadow-lg bg-white">
+            <div
+              class="rounded-xl p-5 shadow-lg bg-white hover:border-1 hover:border-zinc-500"
+            >
               <div class="flex justify-between items-center">
                 <div
                   class="bg-pink-300 w-8 h-8 rounded-lg flex justify-center items-center"
@@ -237,7 +256,9 @@
               </div>
             </div>
             <!-- card-7 -->
-            <div class="rounded-xl p-5 shadow-lg bg-white">
+            <div
+              class="rounded-xl p-5 shadow-lg bg-white hover:border-1 hover:border-zinc-500"
+            >
               <div class="flex justify-between items-center">
                 <div
                   class="bg-pink-300 w-8 h-8 rounded-lg flex justify-center items-center"
@@ -266,7 +287,9 @@
               </div>
             </div>
             <!-- card-8 -->
-            <div class="rounded-xl p-5 shadow-lg bg-white">
+            <div
+              class="rounded-xl p-5 shadow-lg bg-white hover:border-1 hover:border-zinc-500"
+            >
               <div class="flex justify-between items-center">
                 <div
                   class="bg-blue-300 w-8 h-8 rounded-lg flex justify-center items-center"
@@ -295,7 +318,9 @@
               </div>
             </div>
             <!-- card-9 -->
-            <div class="rounded-xl p-5 shadow-lg bg-white">
+            <div
+              class="rounded-xl p-5 shadow-lg bg-white hover:border-1 hover:border-zinc-500"
+            >
               <div class="flex justify-between items-center">
                 <div
                   class="bg-pink-300 w-8 h-8 rounded-lg flex justify-center items-center"
