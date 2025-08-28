@@ -58,4 +58,4 @@ Answer: The preventDefault() and stopPropagation() methods, both part of the jav
 
 The preventDefault() method is used to prevent the browser's default action associated with a specific event. This means it stops the native behavior that would typically occur when an event fires.
 
-The stopPropagation() method is used to prevent the event from propagating further up or down the DOM tree during the capturing and bubbling phases of event propagation. It stops the event from reaching other event listeners on parent or child elements
+The stopPropagation() method is used to prevent the event from propagating further up or down the DOM tree during the capturing and bubbling phases of event propagation. It stops the event from reaching other event listeners on parent or child elements.
